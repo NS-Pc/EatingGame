@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.map{
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(44, 42, 42);
+}
+.play{
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    text-align: center;
+    align-content: center;
+}
+#play{
+    background-color: black;
+    display: inline-block;
+    color: white;
+    font-size: 40px;
+    width: 200px;
+    height: 55px;
+    border: 4px solid transparent;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#play:hover{
+    background-color: rgb(68, 66, 66);
+    text-shadow: 2px 2px 1px black,4px 4px 3px black,6px 6px 5px black;
+    border-color: black;
+}
+
+
+.Scr{
+    width: 150px;
+    height: 40px;
+    display: inline-block;
+    border:2px solid white;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px black,4px 4px 4px black,6px 6px 6px black;
+}
+.Scr p{
+    position: absolute;
+    top: -15px;
+    left: 5px;
+    padding: 0px 6px;
+    background-color: rgb(44, 42, 42);  
+}
+.Scr samp{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+#Foodbox{
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}
+#timebox{
+    position: fixed;
+    left: 10px;
+    top: 10px;
+}
+
+#ground{
+    z-index: 50;
+    position: fixed;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    width: 330px;
+    height: 330px;
+    border: 10px solid rgb(87, 65, 33);
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+    background-image: url(gress.jpg);
+    background-size: 50px 50px;
+    box-shadow: 2px 2px 2px black,4px 4px 4px black,6px 6px 6px black;
+}
+
+#player{
+    background-image: url(player.png);
+    background-size: 100% 100%;
+}
+#food{
+    background-image: url(apple.png);
+    background-size: 100% 100%;
+}
+#btnbox{
+    z-index: 50;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    font-size: 40px;
+}
+#btnbox div{
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+    border: 2px solid white;
+    box-shadow: 2px 2px 2px black,4px 4px 4px black,6px 6px 6px black;
+}
+#btnbox div:hover{
+    color: white;
+    background-color: rgb(46, 46, 46);
+    transform: scale(1.1);
+    box-shadow: 2px 2px 2px black,4px 4px 4px black;
+    text-shadow: 2px 2px 1px black,4px 4px 3px black;
+}
+#top{
+    grid-column-start: 2;
+}
+#down{
+    grid-row-start: 3;
+    grid-column-start: 2;
+}
+#left{
+    grid-column-start: 1;
+}
+#right{
+    grid-column-start: 3;
+}
+#gameover{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(69, 68, 68);
+    text-align: center;
+    align-content: center;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1000;
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 2px black,4px 4px 4px black;
+    border: 6px solid black;
+}
+#gameover img{
+    width: 40px;
+}
+#gameover p{
+ margin-bottom: 40px;
+}
+#gameover #reset{
+    margin-top: 20px;
+    width: 200px;
+    display: inline-block;
+    border: 5px solid black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#gameover #reset:hover{
+    background-color: rgb(105, 105, 105);
+    transform: scale(1.1);
+}

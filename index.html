@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2D game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--Game Map-->
+   <div class="map">
+    <!--Play button-->
+    <div class="play"><div id="play">Play</div></div>
+     <!--Scr box and Time box-->
+    <div class="Scr" id="Foodbox"><p>Food</p><samp id="Foodscr">0</samp></div>
+      <div class="Scr" id="timebox"><p>Time</p><samp id="time">0</samp></div>
+    <!--Ground-->
+    <div id="ground">
+      <!--Player & Food-->
+      <div id="player"></div>
+      <div id="food"></div>
+    </div>
+    <!--Controlls Button box-->
+    <div id="btnbox">
+      <!--Controll Buttons-->
+      <div id="top">▲</div>
+      <div id="down">▼</div>
+      <div id="left">◀</div>
+      <div id="right">▶</div>
+    </div>
+    <!--GameOver-->
+    <div id="gameover">
+      <p>GameOver</p>
+      <img src="apple.png">
+      <samp id="foodscr">0</samp><br>
+      <div id="reset">Reset</div>
+    </div>
+   </div>
+   <!--All Audios-->
+   <audio id="B" src="button.mp3"></audio>
+   <audio id="E" src="Eating.mp3"></audio>
+   <audio id="G" src="Gameover.mp3"></audio>
+
+    <!--Script-->
+    <script src="script.js"></script>
+  </body>
+</html>
